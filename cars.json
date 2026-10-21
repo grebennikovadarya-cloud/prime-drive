@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "BMW M4 Competition",
+    "price": 82900,
+    "engine": "3.0",
+    "power": 510,
+    "km": 12000,
+    "year": 2025,
+    "type": "Купе",
+    "fuel": "Бензин"
+  },
+  {
+    "id": 2,
+    "name": "BMW X5 xDrive40i",
+    "price": 68900,
+    "engine": "3.0",
+    "power": 381,
+    "km": 28000,
+    "year": 2024,
+    "type": "Кроссовер",
+    "fuel": "Бензин"
+  },
+  {
+    "id": 3,
+    "name": "BMW 530e",
+    "price": 57900,
+    "engine": "2.0 Hybrid",
+    "power": 292,
+    "km": 8500,
+    "year": 2025,
+    "type": "Седан",
+    "fuel": "Гибрид"
+  },
+  {
+    "id": 4,
+    "name": "BMW M5 Competition",
+    "price": 118900,
+    "engine": "4.4 V8",
+    "power": 625,
+    "km": 15000,
+    "year": 2024,
+    "type": "Седан",
+    "fuel": "Бензин"
+  },
+  {
+    "id": 5,
+    "name": "BMW i4 M50",
+    "price": 72500,
+    "engine": "Electric",
+    "power": 544,
+    "km": 9200,
+    "year": 2025,
+    "type": "Купе",
+    "fuel": "Электро"
+  },
+  {
+    "id": 6,
+    "name": "BMW X6 M Competition",
+    "price": 132900,
+    "engine": "4.4 V8",
+    "power": 625,
+    "km": 18500,
+    "year": 2024,
+    "type": "Кроссовер",
+    "fuel": "Бензин"
+  }
+]

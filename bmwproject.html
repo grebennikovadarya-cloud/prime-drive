@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prime Drive — автомобили BMW</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="bmw.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+
+        <a href="#top" class="brand">
+            <span class="roundel">Prime</span>
+            <span>Drive</span>
+        </a>
+
+        <nav class="navlinks">
+            <a href="#catalog">Автомобили</a>
+            <a href="#benefits">Почему мы</a>
+            <a href="#about">О компании</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+
+        <a href="#contact" class="nav-cta">
+            Оставить заявку
+        </a>
+
+        <button class="menu">☰</button>
+
+    </div>
+</header>
+
+
+<main id="top">
+
+    <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.jpg">
+        <source src="video/hero.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-grid">
+        <div class="hero-content">
+            <div class="eyebrow">Премиальные автомобили</div>
+            <h1>
+                Твой Prime.<br>
+                Твой<br>
+                BMW.
+            </h1>
+
+            <p>Подбираем новые и автомобили с пробегом BMW с прозрачной историей, проверкой и сопровождением сделки.</p>
+
+            <div class="actions">
+                <a href="#catalog" class="btn primary">Смотреть автомобили</a>
+                <a href="#contact" class="btn secondary">Получить консультацию</a>
+            </div>
+        </div>
+
+        <div class="hero-car">
+            <div class="hero-car-name">M4</div>
+        </div>
+    </div>
+</section>
+
+    <section class="section" id="catalog">
+
+        <div class="container">
+
+            <div class="section-head">
+
+                <div>
+                    <div class="eyebrow">В наличии</div>
+
+                    <h2>Избранные автомобили</h2>
+                </div>
+
+                <div class="muted">6 автомобилей</div>
+
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="carSearch" placeholder="Поиск: BMW M4, X5, 530e…" autocomplete="off">
+                <button type="button" id="searchClear" aria-label="Очистить">✕</button>
+            </div>
+
+            <div class="filters">
+
+                <select class="filter" id="filterType">
+                    <option value="">Все модели</option>
+                    <option value="Седан">Седаны</option>
+                    <option value="Кроссовер">Кроссоверы</option>
+                    <option value="Купе">Купе</option>
+                </select>
+
+                <select class="filter" id="filterYear">
+                    <option value="">Любой год</option>
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                </select>
+                
+                <div class="filter-price">
+                    <div class="filter-price-label">Цена: <span id="priceMinLabel">€50 000</span> — <span id="priceMaxLabel">€150 000</span>
+                    </div>
+                    <div class="filter-price-sliders">
+                        <input type="range" id="priceMin" min="50000" max="150000" step="1000" value="50000">
+                        <input type="range" id="priceMax" min="50000" max="150000" step="1000" value="150000">
+                    </div>
+                </div>
+            </div>
+
+
+           <div class="cars">
+
+    <article class="card" data-type="Купе" data-year="2025" data-price="82900">
+
+        <div class="car-image">
+            <img src="images/1.avif" alt="">
+            <span class="badge">2025</span>
+        </div>
+
+        <div class="card-body">
+
+            <div class="model">
+                <h3>BMW M4 Competition</h3>
+                <div class="price">€82 900</div>
+            </div>
+
+            <div class="specs">3.0 • 510 л.с. • 12 000 км</div>
+
+            <div class="car-description-wrap">
+                <p class="car-description" data-car-id="1"></p>
+                <button type="button" class="car-description-toggle" hidden>
+                    Показать полностью
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <span class="muted">В наличии</span>
+                <a href="#contact" class="details">Подробнее →</a>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <article class="card" data-type="Кроссовер" data-year="2024" data-price="68900">
+
+        <div class="car-image">
+            <img src="images/2.jpg" alt="">
+            <span class="badge">2024</span>
+        </div>
+
+        <div class="card-body">
+
+            <div class="model">
+                <h3>BMW X5 xDrive40i</h3>
+                <div class="price">€68 900</div>
+            </div>
+
+            <div class="specs">3.0 • 381 л.с. • 28 000 км</div>
+
+            <div class="car-description-wrap">
+                <p class="car-description" data-car-id="2"></p>
+                <button type="button" class="car-description-toggle" hidden>
+                    Показать полностью
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <span class="muted">В наличии</span>
+                <a href="#contact" class="details">Подробнее →</a>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <article class="card" data-type="Седан" data-year="2025" data-price="57900">
+
+        <div class="car-image">
+            <img src="images/3.jpg" alt="">
+            <span class="badge">2025</span>
+        </div>
+
+        <div class="card-body">
+
+            <div class="model">
+                <h3>BMW 530e</h3>
+                <div class="price">€57 900</div>
+            </div>
+
+            <div class="specs">2.0 Hybrid • 292 л.с. • 8 500 км</div>
+
+            <div class="car-description-wrap">
+                <p class="car-description" data-car-id="3"></p>
+                <button type="button" class="car-description-toggle" hidden>
+                    Показать полностью
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <span class="muted">В наличии</span>
+                <a href="#contact" class="details">Подробнее →</a>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <article class="card" data-type="Седан" data-year="2024" data-price="118900">
+
+        <div class="car-image">
+            <img src="images/4.jpg" alt="">
+            <span class="badge">2024</span>
+        </div>
+
+        <div class="card-body">
+
+            <div class="model">
+                <h3>BMW M5 Competition</h3>
+                <div class="price">€118 900</div>
+            </div>
+
+            <div class="specs">4.4 V8 • 625 л.с. • 15 000 км</div>
+
+            <div class="car-description-wrap">
+                <p class="car-description" data-car-id="4"></p>
+                <button type="button" class="car-description-toggle" hidden>
+                    Показать полностью
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <span class="muted">В наличии</span>
+                <a href="#contact" class="details">Подробнее →</a>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <article class="card" data-type="Купе" data-year="2025" data-price="72500">
+
+        <div class="car-image">
+            <img src="images/5.jpg" alt="">
+            <span class="badge">2025</span>
+        </div>
+
+        <div class="card-body">
+
+            <div class="model">
+                <h3>BMW i4 M50</h3>
+                <div class="price">€72 500</div>
+            </div>
+
+            <div class="specs">Electric • 544 л.с. • 9 200 км</div>
+
+            <div class="car-description-wrap">
+                <p class="car-description" data-car-id="5"></p>
+                <button type="button" class="car-description-toggle" hidden>
+                    Показать полностью
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <span class="muted">В наличии</span>
+                <a href="#contact" class="details">Подробнее →</a>
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <article class="card" data-type="Кроссовер" data-year="2024" data-price="132900">
+
+        <div class="car-image">
+            <img src="images/6.jpg" alt="">
+            <span class="badge">2024</span>
+        </div>
+
+        <div class="card-body">
+
+            <div class="model">
+                <h3>BMW X6 M Competition</h3>
+                <div class="price">€132 900</div>
+            </div>
+
+            <div class="specs">4.4 V8 • 625 л.с. • 18 500 км</div>
+
+            <div class="car-description-wrap">
+                <p class="car-description" data-car-id="6"></p>
+                <button type="button" class="car-description-toggle" hidden>
+                    Показать полностью
+                </button>
+            </div>
+
+            <div class="card-footer">
+                <span class="muted">В наличии</span>
+                <a href="#contact" class="details">Подробнее →</a>
+            </div>
+
+        </div>
+
+    </article>
+
+</div>
+        </div>
+
+    </section>
+
+    <section class="section" id="benefits">
+
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">Сервис</div>
+                    <h2> Покупка без лишних вопросов</h2>
+                </div>
+            </div>
+
+            <div class="benefits">
+
+                <article class="benefit">
+
+                    <div class="icon">✓</div>
+                    <h3>Проверенная история</h3>
+                    <p>Проверяем VIN, обслуживание, документы и юридическую чистоту автомобиля.</p>
+                </article>
+
+                <article class="benefit">
+
+                    <div class="icon">◈</div>
+
+                    <h3>Trade-in</h3>
+                    <p>Оценим ваш автомобиль и зачтём его стоимость в покупку нового BMW.</p>
+                </article>
+
+                <article class="benefit">
+
+                    <div class="icon">↗</div>
+
+                    <h3>Доставка</h3>
+
+                    <p>Организуем доставку автомобиля по России.</p>
+
+                </article>
+
+
+                <article class="benefit">
+
+                    <div class="icon">24</div>
+
+                    <h3>Поддержка</h3>
+
+                    <p>Остаёмся на связи после сделки и помогаем с сервисом.</p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="about">
+
+        <div class="container about">
+
+            <div class="about-art">
+                <span>BMW</span>
+            </div>
+
+            <div>
+
+                <div class="eyebrow">О нас</div>
+
+                <h2>Автомобили, которые хочется водить.</h2>
+
+                <p class="about-text">Prime Drive — премиальный автомобильный дилер. Мы подбираем автомобили BMW, проверяем их историю и сопровождаем клиента на всех этапах покупки.</p>
+
+                <div class="numbers">
+
+                    <div class="number">
+                        <strong>8+</strong>
+                        <small>лет на рынке</small>
+                    </div>
+
+                    <div class="number">
+                        <strong>350+</strong>
+                        <small>автомобилей продано</small>
+                    </div>
+
+                    <div class="number">
+                        <strong>5.0</strong>
+                        <small>средняя оценка</small>
+                    </div>
+
+                    <div class="number">
+                        <strong>24/7</strong>
+                        <small>поддержка клиентов</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="reviews">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="eyebrow">Отзывы</div>
+                    <h2>Что говорят клиенты</h2>
+                </div>
+                <div class="muted" id="reviewsCount">Загрузка…</div>
+            </div>
+
+            <div class="rating-summary" id="ratingSummary">
+                <div class="rating-summary-score">
+                    <div class="rating-summary-number" id="avgRating">0.0</div>
+                    <div class="rating-summary-stars" id="avgStars">☆☆☆☆☆</div>
+                    <div class="rating-summary-count" id="avgCount">Нет отзывов</div>
+                </div>
+                <div class="rating-summary-text" id="avgText">Здесь появится средняя оценка</div>
+            </div>
+
+            <form class="review-form" id="reviewForm">
+                <input
+                    class="field"
+                    type="text"
+                    id="reviewName"
+                    name="name"
+                    placeholder="Ваше имя"
+                    maxlength="50"
+                    required
+                >
+
+                <div class="rating-input" id="ratingInput">
+                    <input type="hidden" name="rating" id="reviewRating" value="5" required>
+
+                    <div class="rating-stars" id="ratingStars">
+                        <button type="button" class="star" data-value="1" aria-label="1 звезда">★</button>
+                        <button type="button" class="star" data-value="2" aria-label="2 звезды">★</button>
+                        <button type="button" class="star" data-value="3" aria-label="3 звезды">★</button>
+                        <button type="button" class="star" data-value="4" aria-label="4 звезды">★</button>
+                        <button type="button" class="star" data-value="5" aria-label="5 звёзд">★</button>
+                    </div>
+
+                    <span class="rating-label" id="ratingLabel">Отлично</span>
+                </div>
+
+                <textarea
+                    class="field"
+                    id="reviewText"
+                    name="text"
+                    placeholder="Ваш отзыв"
+                    maxlength="1000"
+                    required
+                ></textarea>
+
+                <div class="form-status" id="reviewStatus"></div>
+
+                <input
+                    type="text"
+                    name="website"
+                    id="website"
+                    autocomplete="off"
+                    tabindex="-1"
+                    style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"
+                >
+
+                <button class="btn primary" type="submit">
+                    Оставить отзыв
+                </button>
+            </form>
+
+            <div class="reviews" id="reviewsList">
+                <div class="reviews-empty">Загрузка отзывов…</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+
+        <div class="container">
+
+            <div class="contact">
+
+                <div>
+
+                    <div class="eyebrow">Связаться</div>
+
+                    <h2>Найдём ваш BMW</h2>
+
+                    <p class="contact-info">Оставьте контакты — наш менеджер свяжется с вами и предложит подходящие автомобили.
+
+                        <br><br>
+
+                        <strong>Daria Grebennikova</strong>
+
+                        <br>Пн–Сб, 09:00–19:00<br>
+
+                        +7 777 777 77 77
+
+                    </p>
+
+                </div>
+
+                <form class="form" action="send.php" method="post" id="contact-form">
+
+                    <input
+                        class="field"
+                        type="text"
+                        name="name"
+                        placeholder="Ваше имя"
+                    >
+
+                    <input
+                        class="field"
+                        type="tel"
+                        name="phone"
+                        placeholder="Телефон"
+                    >
+
+                    <input
+                        class="field"
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                    >
+
+                    <select class="field" name="topic">
+
+                        <option value="">
+                            Что вас интересует?
+                        </option>
+
+                        <option value="Покупка BMW">
+                            Покупка BMW
+                        </option>
+
+                        <option value="Trade-in">
+                            Trade-in
+                        </option>
+
+                        <option value="Заказ автомобиля">
+                            Заказ автомобиля
+                        </option>
+
+                    </select>
+
+                    <textarea
+                        class="field"
+                        name="message"
+                        placeholder="Комментарий"
+                    ></textarea>
+
+                    <input
+                        type="text"
+                        name="website"
+                        autocomplete="off"
+                        tabindex="-1"
+                        style="position:absolute;left:-9999px;opacity:0;pointer-events:none;"
+                    >
+
+                    <div class="form-status" id="form-status"></div>
+
+                    <button
+                        class="btn primary"
+                        type="submit"
+                    >
+                        Отправить заявку
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container">
+
+        © 2026 Prime Drive
+
+    </div>
+
+</footer>
+
+<script src="main.js"></script>
+
+</body>
+</html>
